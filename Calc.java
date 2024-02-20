@@ -1,4 +1,4 @@
-class Calc{
+class Calc extends ExtendedStd{
 
     /**
      * The function "addition" takes two float operands and returns their sum.
@@ -65,6 +65,7 @@ class Calc{
         return square(operand_1)*operand_1;
      }
  
+     
      // The code `public static void main(String[] args)` is the main method in Java. It is the entry
      // point of the program and is automatically called when the program is executed.
      public static void main(String[] args){
@@ -110,7 +111,12 @@ class Calc{
          // `cube_result`, which will hold the cube of `operand_1`.
          float cube_result=c.cube(operand_1);
          System.out.println("Cube result is : "+cube_result);
+
+         float sqr_result1=c.square1(operand_1);
+         System.out.println("Square result is : "+sqr_result1);
  
+         float cube_result1=c.cube1(operand_1);
+         System.out.println("Cube result is : "+cube_result1);
  
      }
  }
